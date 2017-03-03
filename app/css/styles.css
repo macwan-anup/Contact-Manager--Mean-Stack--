@@ -1,0 +1,335 @@
+@import url("http://netdna.bootstrapcdn.com/font-awesome/2.0/css/font-awesome.css");
+@import url("http://fonts.googleapis.com/css?family=Berkshire+Swash");
+/** MAIN CSS **/
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+.clear-all {
+    clear: both;
+}
+
+.clear-left {
+    clear: left;
+}
+
+.clear-right {
+    clear: right;
+}
+
+.user-banner {
+    width: 180px;
+    padding: 1px 0px 1px 0px;
+    background: #68de99;
+    text-align: center;
+}
+.user-banner img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 5px;
+    width: 50px;
+    margin-right: 5px;
+    border-radius: 100%;
+}
+.user-banner .username {
+    font-weight: bold;
+}
+
+/** IMPORT HELPER CSS **/
+/** IMPORT BASE CSS **/
+html, body {
+    height: 100%;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font: 14px/20px "Proxima Nova", "Helvetica Neue", arial, sans-serif;
+    color: #676e74;
+    background: #E9EEF1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #1F2123;
+}
+
+h1, h2 {
+    color: #4f5459;
+    margin: 5px 0 20px 0;
+}
+
+h1 {
+    font-size: 25px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+.light {
+    color: #b6babe;
+}
+
+#nav {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 180px;
+    color: #fff;
+    background: #1F2123;
+    z-index: +10;
+}
+#nav a {
+    color: #737E89;
+    text-decoration: none;
+}
+#nav ul {
+    list-style-type: none;
+    padding: 12px;
+    margin: 0;
+    font-weight: 600;
+}
+#nav ul li.head {
+    color: #50585f;
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 6px 12px;
+}
+#nav ul li a {
+    display: block;
+    padding: 6px 12px;
+    margin: 5px 0;
+    border-radius: 2px;
+}
+#nav ul li a i {
+    margin-right: 8px;
+}
+#nav ul li a:hover {
+    background: #2b2e31;
+}
+#nav ul li.active a {
+    color: #fff;
+    background: #2DA5EE;
+}
+
+
+
+@media (max-width: 767px) {
+    .user-banner {
+        width: 66px;
+        padding: 1px 0px 1px 0px;
+        background: #2DCC70;
+        text-align: center;
+    }
+    .user-banner img {
+        display: inline-block;
+        vertical-align: middle;
+        margin-top: 5px;
+        width: 50px;
+        margin-right: 5px;
+        border-radius: 100%;
+    }
+    .user-banner .username {
+        font-size: 75%;
+        font-weight: bold;
+    }
+
+    #nav {
+        z-index: +10;
+        width: 66px;
+    }
+    #nav li.head,
+    #nav li span {
+        display: none;
+    }
+
+    #main {
+        margin-left: 66px;
+    }
+
+    .post .avatar {
+        width: 50px;
+    }
+}
+@media (max-width: 320px) {
+    .user-banner {
+        width: 100%;
+        padding: 1px 0px 1px 0px;
+        background: #2DCC70;
+        text-align: center;
+    }
+    .user-banner img {
+        display: inline-block;
+        vertical-align: middle;
+        width: 20px;
+        margin-right: 5px;
+        border-radius: 100%;
+    }
+    .user-banner .username {
+        display: inline;
+        font-weight: bold;
+    }
+
+    #nav {
+        z-index: +10;
+        width: 100%;
+        bottom: auto;
+    }
+    #nav li.head,
+    #nav li span {
+        display: none;
+    }
+    #nav ul {
+        padding: 3px 5px;
+    }
+    #nav li {
+        display: inline-block;
+    }
+    #nav li a {
+        padding: 6px 5px;
+    }
+    #nav li a i {
+        margin: 0 !important;
+    }
+
+    #main {
+        padding: 50px 0 0 0;
+        margin: 0;
+    }
+}
+.content{
+    margin-left: 180px;
+
+    position: relative;
+    top: 70px;
+}
+.breadcrumb.header{
+    margin-bottom: 0;
+}
+.breadcrumb.header li{
+    font-size: 1.4em;
+}
+header{
+    margin-left: 180px;
+    position: fixed;
+    width: 100%;
+    top:0;
+    font-family: 'Berkshire Swash', cursive;
+    padding: 37px;
+    padding-left: 80px;
+    font-size: 3em;
+    color: #7E8AA2;
+    z-index: 9999;
+    background-color: #1F2123;
+    box-shadow: 8px -2px 11px 7px grey;
+}
+.page-header h1{
+    padding: 15px;
+    margin: 0;
+}
+section{
+    margin-top: 20px;
+    box-sizing: border-box;
+    padding: 15px;
+    padding-bottom: 0px;
+    background: white;
+    box-shadow: 5px 7px 13px grey;
+}
+section .col-sm-8 h4{
+    font-size: 1.8em;
+    color: #405952;
+}
+section .col-sm-4 h4{
+  font-size: 1.8em;
+    color: #405952;
+}
+section .col-sm-6 p{
+    text-align: center;
+    color: #9C9B7A;
+}
+.contact{
+    padding: 10px;
+    font-size: 1.5em;
+}
+.contact p{
+    padding: 10px;
+    color: #9C9B7A;
+}
+.icon{
+    text-align: center;
+    font-size: 1.7em;
+    padding: 5px;
+}
+.icon .col-sm-3{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #E2F0D6;
+    background: #F77A52;
+}
+section h6{
+    color: #979C9C;
+    font-size: 1.2em;
+}
+.icon .col-sm-3:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+
+/*search*/
+
+.search-form .form-group {
+    float: right !important;
+    transition: all 0.35s, border-radius 0s;
+    width: 32px;
+    height: 32px;
+    background-color: #fff;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+}
+.search-form .form-group input.form-control {
+    padding-right: 20px;
+    border: 0 none;
+    background: transparent;
+    box-shadow: none;
+    display:block;
+}
+.search-form .form-group input.form-control::-webkit-input-placeholder {
+    display: none;
+}
+.search-form .form-group input.form-control:-moz-placeholder {
+    /* Firefox 18- */
+    display: none;
+}
+.search-form .form-group input.form-control::-moz-placeholder {
+    /* Firefox 19+ */
+    display: none;
+}
+.search-form .form-group input.form-control:-ms-input-placeholder {
+    display: none;
+}
+.search-form .form-group:hover,
+.search-form .form-group.hover {
+    width: 100%;
+    border-radius: 4px 25px 25px 4px;
+}
+.search-form .form-group span.form-control-feedback {
+    position: absolute;
+    top: -1px;
+    right: -2px;
+    z-index: 2;
+    display: block;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    color: #3596e0;
+    left: initial;
+    font-size: 14px;
+}

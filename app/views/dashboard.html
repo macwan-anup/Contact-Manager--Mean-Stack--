@@ -1,0 +1,22 @@
+<style>
+    body{
+        padding: 0;
+        background: #E9EEF1;
+    }
+</style>
+<div id="nav" ng-init="check_logged_user()">
+    <div class="user-banner"><img src="http://bit.ly/1jFjKGa"/>
+        <h5 class="username">{{anup}}</h5>
+    </div>
+    <ul>
+        <li class="head">General</li>
+        <li class="active"><a ui-sref="dashboard.home"><span><span class="glyphicon glyphicon-fire" aria-hidden="true"></span> Dashboard</span></a></li>
+        <li><a ui-sref="dashboard.add-contact"><span class="swatch light-grey"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add Contact</span></a></li>
+        <li><a ui-sref="dashboard.favourite"><span class="swatch light-grey"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Favourite</span></a></li>
+        <li><a ui-sref="dashboard.starred"><span class="swatch light-grey"><span class="glyphicon glyphicon-star" aria-hidden="true"></span> Starred</span></a></li>
+        <li><a ng-click="logout()"><span><span class="glyphicon glyphicon-off" aria-hidden="true"></span> Logout</span></a></li>
+    </ul>
+</div>
+<header>Contact Manager</header>
+<div ui-view></div>
+

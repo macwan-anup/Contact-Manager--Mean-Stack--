@@ -1,0 +1,110 @@
+@import url("http://fonts.googleapis.com/css?family=Berkshire+Swash");
+@import url("http://netdna.bootstrapcdn.com/font-awesome/2.0/css/font-awesome.css");
+* {
+    padding : 0;
+    margin  : 0;
+    border  : 0;
+    outline : 0;
+    font-family: Arial;
+}
+
+body {
+    background-color : #917975;
+    padding-top      : 50px;
+}
+
+form.node {
+    position : relative;
+    width  : 400px;
+    padding: 10px;
+    border-radius : 5px;
+    margin : 0 auto;
+    background-color: #e3e3e3;
+    border-top : 1px solid #f1f1f1;
+    box-shadow : 0 0 0 1px #626262 , 0 0 0 6px rgba(150,150,150,.5) , 0 0 0 7px #cbbdbc , 0 0 0 8px #78495b;
+    text-align : center;
+}
+
+form.node h1 {
+    margin     : 10px 0 20px 0;
+    font-size  : 75px;
+    color      : #b8b8b8;
+    font-family: 'Berkshire Swash', cursive;
+    text-shadow: 1px 1px 0 #888 , 2px 2px 0 #ccc;
+}
+
+form.node input {
+    display    : block;
+    height     : 48px;
+    margin     : 0 auto 17px;
+    text-align : center;
+    width      : 266px;
+    border-radius : 5px;
+}
+
+form.node .user ,form.node .pass {
+    font-size      : 20px;
+    background: -moz-linear-gradient(top,  rgba(213,213,213,1) 0%, rgba(213,213,213,1) 13%, rgba(215,215,215,1) 30%, rgba(222,222,222,1) 71%, rgba(221,221,221,1) 100%);
+    background: -webkit-linear-gradient(top,  rgba(213,213,213,1) 0%,rgba(213,213,213,1) 13%,rgba(215,215,215,1) 30%,rgba(222,222,222,1) 71%,rgba(221,221,221,1) 100%);
+
+    box-shadow: inset 0 0 3px 1px #ccc;
+
+    border-top : 1px solid #aaa;
+    border-bottom : 1px solid #eee;
+
+    color          : #555;
+}
+
+form.node .btn {
+    margin-bottom : 30px;
+    color         : #fefefe;
+    text-shadow   : 0 1px 0 #777;
+    border        : 1px solid #b6733c;
+    box-shadow    : inset 0 0 1px 1px #ffcb9c;
+    text-transform : uppercase;
+    background: -moz-linear-gradient(top,  rgba(249,159,107,1) 0%, rgba(238,148,96,1) 57%, rgba(236,146,94,1) 89%, rgba(232,144,94,1) 94%, rgba(234,146,96,1) 96%, rgba(244,161,111,1) 100%);
+    background: -webkit-linear-gradient(top,  rgba(249,159,107,1) 0%,rgba(238,148,96,1) 57%,rgba(236,146,94,1) 89%,rgba(232,144,94,1) 94%,rgba(234,146,96,1) 96%,rgba(244,161,111,1) 100%);
+
+    font-size      : 17px;
+}
+
+form.node .btn:hover {
+    cursor : pointer;
+    background: -moz-linear-gradient(top,  rgba(244,161,111,1) 0%, rgba(234,146,96,1) 4%, rgba(232,144,94,1) 6%, rgba(236,146,94,1) 12%, rgba(238,148,96,1) 43%, rgba(249,159,107,1) 100%);
+    background: -webkit-linear-gradient(top,  rgba(244,161,111,1) 0%,rgba(234,146,96,1) 4%,rgba(232,144,94,1) 6%,rgba(236,146,94,1) 12%,rgba(238,148,96,1) 43%,rgba(249,159,107,1) 100%);
+}
+
+form.node .user:focus , .pass:focus {
+    box-shadow    : inset 0 0 1px 1px #ffcb9c;
+    border        : 1px solid #b6733c;
+    transition    : all .2s ease-in;
+}
+
+form.node hr {
+    height : 1px;
+    width  : 270px;
+    margin : auto;
+}
+
+form.node h5 {
+    margin-top : 10px;
+    color      : #7d7d7d;
+}
+
+form.node a {
+    text-transform  : capitalize;
+    text-decoration : none;
+    color  : #4e4e4e;
+}
+
+::-webkit-input-placeholder {
+    color          : #929292;
+    font-size      : 17px;
+    text-transform : uppercase;
+}
+
+:-moz-placeholder {
+    color          : #929292;
+    font-size      : 17px;
+    text-transform : uppercase;
+}

@@ -1,0 +1,39 @@
+<div class="content">
+    <div class="page-header">
+        <h1>Add Contact <small>A quick-way to add contact. </small></h1>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-2">
+                <form ng-submit="addContact()">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" class="form-control" ng-model="add_contact.name" id="name" placeholder="Full Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="nickname">Nick-Name</label>
+                        <input type="text" class="form-control" ng-model="add_contact.nickname" id="nickname" placeholder="Nick-Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="location">Location</label>
+                        <input type="text" class="form-control" ng-model="add_contact.location" id="location" placeholder="Location">
+                    </div>
+                    <div class="form-group">
+                        <label for="bdate">Birthday</label>
+                        <input type="text" class="form-control" ng-model="add_contact.bdate" id="bdate" placeholder="Birthday">
+                    </div>
+                    <div class="form-group">
+                        <label for="number">Mobile Number</label>
+                        <input type="text" class="form-control" ng-model="add_contact.number" id="number" placeholder="Mobile Number">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control" ng-model="add_contact.email" id="email" placeholder="Email">
+                    </div>
+                    <button type="submit" class="btn btn-warning">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
